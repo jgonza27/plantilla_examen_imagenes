@@ -46,13 +46,14 @@
 
 }
 
-@each $nombre, $color in v.$theme-colors {
+@each $nombre, $color in var.$theme-colors {
     .btn-#{$nombre} {
         @extend %btn-base;
         background-color: $color;
 
         &:hover {
-            background-color: f.adjust-color-weight($color, -25%);
+
+            background-color: fun.adjust-color-weight($color, -25%);
         }
     }
 }
