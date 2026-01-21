@@ -1,0 +1,10 @@
+@use "sass:color";
+@use "sass:meta";
+
+@function adjust-color-weight($color, $percent) {
+    @if meta.type-of($percent) !=number {
+        @error "El valor introducido no es un número.";
+    }
+
+    @return color.scale($color, $lightness: $percent);
+}

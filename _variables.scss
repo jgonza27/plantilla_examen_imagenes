@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$color-bg: #f5f5f5;
+$color-text: #333;
+$color-highlight: #007bff;
+
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Arial", sans-serif;
+
+$theme-colors: (
+    "primary": $color-highlight,
+    "secondary": #6c757d,
+    "success": #28a745
+);
+
+$breakpoints: (
+    "sm": 767px,
+    "md": 1023px,
+    "lg": 1024px
+);
