@@ -1,0 +1,11 @@
+@use "variables" as var;
+@use "funciones" as fun;
+@use "mixins" as mix;
+
+body {
+    background-color: var.$color-bg;
+    font-family: var.$font-primary;
+    color: var.$color-text;
+    margin: 0;
+}
+

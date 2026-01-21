@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-$color-bg: #f5f5f5;
-$color-text: #333;
-$color-highlight: #007bff;
+$color-fondo: #f5f5f5;
+$color-texto: #333;
+$color-destacado: #007bff;
 
-$font-primary: "Roboto", sans-serif;
-$font-secondary: "Arial", sans-serif;
+$fuente-principal: "Roboto", sans-serif;
+$fuente-secundaria: "Arial", sans-serif;
 
 $theme-colors: (
-    "primary": $color-highlight,
+    "primary": $color-destacado,
     "secondary": #6c757d,
     "success": #28a745
 );

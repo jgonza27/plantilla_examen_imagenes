@@ -1,5 +1,5 @@
-@use "variables" as v;
-@use "functions" as f;
+@use "variables" as var;
+@use "funciones" as fun;
 
 @mixin card-style {
     border-radius: 8px;
@@ -8,10 +8,10 @@
     background-color: white;
 }
 
-@mixin respond-to($breakpoint) {
-    $bp-sm: map-get(v.$breakpoints, "sm");
-    $bp-md: map-get(v.$breakpoints, "md");
-    $bp-lg: map-get(v.$breakpoints, "lg");
+@mixin respuesta($breakpoint) {
+    $bp-sm: map-get(var.$breakpoints, "sm");
+    $bp-md: map-get(var.$breakpoints, "md");
+    $bp-lg: map-get(var.$breakpoints, "lg");
 
     @if $breakpoint =="sm" {
         @media (max-width: #{$bp-sm}) {
@@ -42,10 +42,12 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
+
+
 }
 
-@each $name, $color in v.$theme-colors {
-    .btn-#{$name} {
+@each $nombre, $color in v.$theme-colors {
+    .btn-#{$nombre} {
         @extend %btn-base;
         background-color: $color;
 
